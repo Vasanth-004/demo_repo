@@ -5,12 +5,12 @@ const app = express();
 app.use(cors());
 
 app.get("/" , (req,res) => {
-    return res.send("Hello world 2!!");
+    return res.send("Hello world 3!!");
 });
 
 app.post("/webhook", (req,res)=> {
 
-
+    console.log(req.body);
 
     return res.json(req.body);
 })
